@@ -6,7 +6,7 @@ This repository contains the support material for the TensorFlow Hands-on at [Su
 
 #### Documentation
 
-We are using the book [First Contact with TensorFlow] (http://www.jorditorres.org/first-contact-with-tensorflow-book/) 
+We wi use the book [First Contact with TensorFlow] (http://www.jorditorres.org/first-contact-with-tensorflow-book/) 
 as a basic documentation. You can acces a [freely available on-line copy] (http://www.jorditorres.org/first-contact-with-tensorflow/>).
 
 We assume that the student has some basic knowledge about Python. If not, a Python Quick Start hands-on that will help to start with this language can be found [here (Python Quick Start)](http://www.jorditorres.org/teaching-activity/hands-on-1-python-quick-start/).
@@ -49,19 +49,15 @@ The name of the virtual environment in which we are working will appear at the b
 (tensorflow)$ sudo easy_install --upgrade six
 (tensorflow)$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/mac/tensorflow-0.7.1-cp27-none-any.whl
 ```
-In order to be sure that everything is properly working create a simple TensorFlow code and save it with extension ".py". I suggest the following code
+In order to be sure that everything is working create a simple TensorFlow code and save it with extension ".py". I suggest the following code
 
 ```
 import tensorflow as tf
-  
- a = tf.placeholder("float")
- b = tf.placeholder("float")
-  
- y = tf.mul(a, b)
-  
- sess = tf.Session()
-  
- print sess.run(y, feed_dict={a: 3, b: 3})
+a = tf.placeholder("float")
+b = tf.placeholder("float")
+y = tf.mul(a, b)
+sess = tf.Session()
+print sess.run(y, feed_dict={a: 3, b: 3})
 ```
 To run the code, it will be enough with the command 
 
