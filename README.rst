@@ -1,9 +1,6 @@
 Course: First Contact with TensorFlow
 ******
 
-.. image:: https://travis-ci.org/openai/gym.svg?branch=master
-    :target: https://travis-ci.org/openai/gym
-
 **OpenAI Gym is a toolkit for developing and comparing reinforcement learning algorithms.** This is the ``gym`` open-source library, which gives you access to an ever-growing variety of environments.
 
 ``gym`` makes no assumptions about the structure of your agent, and is compatible with any numerical computation library, such as TensorFlow or Theano. You can use it from Python code, and soon from other languages.
@@ -17,7 +14,7 @@ If you're not sure where to start, we recommend beginning with the
 Documentation
 =============
 
-We are using `First Contact with TensorFlow <http://www.jorditorres.org/first-contact-with-tensorflow-book/>`_ as a documentation. You can acces a  `freely available on-line copy <http://www.jorditorres.org/first-contact-with-tensorflow/>`_ .
+We are using the book `First Contact with TensorFlow <http://www.jorditorres.org/first-contact-with-tensorflow-book/>`_ as a basic documentation. You can acces a `freely available on-line copy <http://www.jorditorres.org/first-contact-with-tensorflow/>`_ .
 gym
 ******
 
@@ -34,24 +31,6 @@ If you're not sure where to start, we recommend beginning with the
 .. contents:: **Contents of this document**
    :depth: 2
 
-Basics
-======
-
-There are two basic concepts in reinforcement learning: the
-environment (namely, the outside world) and the agent (namely, the
-algorithm you are writing). The agent sends `actions` to the
-environment, and the environment replies with `observations` and
-`rewards` (that is, a score).
-
-The core `gym` interface is `Env
-<https://github.com/openai/gym/blob/master/gym/core.py>`_, which is
-the unified environment interface. There is no interface for agents;
-that part is left to you. The following are the ``Env`` methods you
-should know:
-
-- `reset(self)`: Reset the environment's state. Returns `observation`.
-- `step(self, action)`: Step the environment by one timestep. Returns `observation`, `reward`, `done`, `info`.
-- `render(self, mode='human', close=False)`: Render one frame of the environment. The default mode will do something human friendly, such as pop up a window. Passing the `close` flag signals the renderer to close any such windows.
 
 Installation
 ============
@@ -488,3 +467,8 @@ We are using `nose2 <https://github.com/nose-devs/nose2>`_ for tests. You can ru
 	  nose2
 
 You can also run tests in a specific directory by using the ``-s`` option, or by passing in the specific name of the test. See the `nose2 docs <http://nose2.readthedocs.org/en/latest/usage.html#naming-tests>`_ for more details.
+
+
+
+.. image:: https://travis-ci.org/openai/gym.svg?branch=master
+    :target: https://travis-ci.org/openai/gym
