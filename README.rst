@@ -1,13 +1,14 @@
 Course: First Contact with TensorFlow
 ******
-This repository contains the support material for the  `Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona)<http://telecomBCN.DeepLearning.Barcelona>`_ .
+This repository contains the support material for the  `Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona)<http://telecomBCN.DeepLearning.Barcelona>`.
 
 .. contents:: **Contents of this repository**
    :depth: 2
 
 Documentation
 =============
-We are using the book `First Contact with TensorFlow <http://www.jorditorres.org/first-contact-with-tensorflow-book/>`_ as a basic documentation. You can acces a `freely available on-line copy <http://www.jorditorres.org/first-contact-with-tensorflow/>`_ .
+We are using the book `First Contact with TensorFlow <http://www.jorditorres.org/first-contact-with-tensorflow-book/>`_ 
+as a basic documentation. You can acces a `freely available on-line copy <http://www.jorditorres.org/first-contact-with-tensorflow/>`_ .
 
 
 Prerequisite
