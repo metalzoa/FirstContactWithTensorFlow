@@ -1,7 +1,7 @@
 Course: First Contact with TensorFlow
 ******
 
-.. contents::
+.. ::
    :depth: 2
 
 Documentation
