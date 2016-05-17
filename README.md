@@ -82,13 +82,22 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 ```
 
 #### Day 1 - TensorFlow basics
+
 - [multiplication.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/multiplicacion.py) 
+
 #### Day 2 - TensorFlow's coding basics
+
 - [regression.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression.py) 
+
 #### Day 3 - TensorFlow basic data structures
+
 - [clustering.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/clustering.py) 
+
 #### Day 4 - Single Layer Neural Network
+
 - [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
 - [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
+
 #### Day 5 - Multi-Layer Neural Networks
+
 - [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
