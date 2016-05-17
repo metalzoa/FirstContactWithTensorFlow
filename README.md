@@ -9,9 +9,11 @@ This repository contains the support material for the TensorFlow Hands-on at [Su
 We are using the book [First Contact with TensorFlow] (http://www.jorditorres.org/first-contact-with-tensorflow-book/) 
 as a basic documentation. You can acces a [freely available on-line copy] (http://www.jorditorres.org/first-contact-with-tensorflow/>).
 
+We assume that the student has some basic knowledge about Python. If not, a Python Quick Start hands-on that will help to start with this language can be found [here (Python Quick Start)](http://www.jorditorres.org/teaching-activity/hands-on-1-python-quick-start/).
+
 
 #### TensorFlow installation (do it before the course starts)
-For the labs, you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. I assume that any student who take this course knows how to do it. 
+For the labs, you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
 
 We will use a virtual environment virtualenv to install TensorFlow (this will not overwrite existing versions of Python packages from other projects required by TensorFlow).
 
@@ -47,6 +49,26 @@ The name of the virtual environment in which we are working will appear at the b
 (tensorflow)$ sudo easy_install --upgrade six
 (tensorflow)$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/mac/tensorflow-0.7.1-cp27-none-any.whl
 ```
+In order to be sure that everything is properly working create a simple TensorFlow code and save it with extension ".py". I suggest the following code
+
+```
+import tensorflow as tf
+  
+ a = tf.placeholder("float")
+ b = tf.placeholder("float")
+  
+ y = tf.mul(a, b)
+  
+ sess = tf.Session()
+  
+ print sess.run(y, feed_dict={a: 3, b: 3})
+```
+To run the code, it will be enough with the command 
+
+```
+$ python test.py
+```
+If the result is 9, it means that TensorFlow is proferly installed.
 
 Finally, when you’ve finished, you should disable the virtual environment as follows:
 
