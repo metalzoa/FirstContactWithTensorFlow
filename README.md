@@ -1,11 +1,58 @@
 
-
+## Hands-on: First Contact With TensorFlow
 This repository contains the support material for the TensorFlow Hands-on at [Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona)] (http://telecomBCN.DeepLearning.Barcelona).
 
 
-Code examples for some popular machine learning algorithms, using TensorFlow library. This tutorial is designed to easily dive into TensorFlow, through examples. It includes both notebook and code with explanations.
 
-## Tutorial index
+#### Documentation
+
+We are using the book [First Contact with TensorFlow] (http://www.jorditorres.org/first-contact-with-tensorflow-book/) 
+as a basic documentation. You can acces a [freely available on-line copy] (http://www.jorditorres.org/first-contact-with-tensorflow/>).
+
+
+#### TensorFlow installation (do it before the course starts)
+For the labs, you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. I assume that any student who take this course knows how to do it. 
+
+We will use a virtual environment virtualenv to install TensorFlow (this will not overwrite existing versions of Python packages from other projects required by TensorFlow).
+
+First, you should install pip and virtualenv if they are not already installed, like the follow script shows:
+```
+# Ubuntu/Linux 64-bit
+$ sudo apt-get install python-pip python-dev python-virtualenv 
+
+# Mac OS X 
+$ sudo easy_install pip
+$ sudo pip install --upgrade virtualenv
+```
+environment virtualenv in the ~/tensorflow directory:
+
+```
+$ virtualenv --system-site-packages ~/tensorflow
+```
+
+The next step is to activate the virtualenv. This can be done as follows:
+
+```
+$ source ~/tensorflow/bin/activate #  with bash 
+$ source ~/tensorflow/bin/activate.csh #  with csh
+(tensorflow)$
+```
+The name of the virtual environment in which we are working will appear at the beginning of each command line from now on. Once the virtualenv is activated, you can use pip to install TensorFlow inside it:
+
+```
+# Ubuntu/Linux 64-bit, CPU only:
+(tensorflow)$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.7.1-cp27-none-linux_x86_64.whl 
+
+# Mac OS X, CPU only:
+(tensorflow)$ sudo easy_install --upgrade six
+(tensorflow)$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/mac/tensorflow-0.7.1-cp27-none-any.whl
+```
+
+Finally, when you’ve finished, you should disable the virtual environment as follows:
+
+```
+(tensorflow)$ deactivate
+```
 
 #### 1 - Introduction
 - Hello World ([notebook](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/1%20-%20Introduction/helloworld.ipynb)) ([code](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/1%20-%20Introduction/helloworld.py))
@@ -49,23 +96,7 @@ MNIST is a database of handwritten digits, with 60,000 examples for training and
 
 
 
-Course: First Contact with TensorFlow
-******
-This repository contains the support material for the  `Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona) <http://telecomBCN.DeepLearning.Barcelona>`.
 
-
-Documentation
-=============
-We are using the book `First Contact with TensorFlow <http://www.jorditorres.org/first-contact-with-tensorflow-book/>`_ 
-as a basic documentation. You can acces a `freely available on-line copy <http://www.jorditorres.org/first-contact-with-tensorflow/>`_ .
-
-
-Prerequisite
-============
-
-In general, when you are working in Python, you should use the virtual environment virtualenv. Virtualenv is a tool to keep Python dependencies required in different projects, in different parts of the same computer. If we use virtualenv to install TensorFlow, this will not overwrite existing versions of Python packages from other projects required by TensorFlow.
-
-For the labs, you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. I assume that any student who take this course knows how to do it. 
 
 
 Installation
