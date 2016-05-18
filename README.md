@@ -101,3 +101,9 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 #### Day 5 - Multi-Layer Neural Networks
 
 - [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
+
+#### Handly references
+
+- IPython/Jupyter Notebook documentation: [http://ipython.readthedocs.io/en/stable/](http://ipython.readthedocs.io/en/stable/)
+- Matplotlib Python plotting library: [http://matplotlib.org/](http://matplotlib.org/)
+- Pandas Python dataframe: [http://pandas.pydata.org/](http://pandas.pydata.org/)
