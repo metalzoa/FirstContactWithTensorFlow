@@ -107,3 +107,5 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 - IPython/Jupyter Notebook documentation: [http://ipython.readthedocs.io/en/stable/](http://ipython.readthedocs.io/en/stable/)
 - Matplotlib Python plotting library: [http://matplotlib.org/](http://matplotlib.org/)
 - Pandas Python dataframe: [http://pandas.pydata.org/](http://pandas.pydata.org/)
+- Numpy Python scientific computation library: [http://numpy.org/](http://numpy.org/)
+
