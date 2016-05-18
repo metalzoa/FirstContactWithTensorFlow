@@ -1,6 +1,6 @@
 
 ## Hands-on: First Contact With TensorFlow
-This repository contains the information required by the TensorFlow Hands-on at [Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona)] (http://telecomBCN.DeepLearning.Barcelona).
+This hands-on tutorial provides a quick start to building applications using TensorFlow. This repository contains the information required by the TensorFlow Hands-on at [Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona)] (http://telecomBCN.DeepLearning.Barcelona).
 
 
 #### Documentation
@@ -12,7 +12,7 @@ We assume that the student has some basic knowledge about Python. If not, a Pyth
 
 
 #### TensorFlow installation (do it before the course starts)
-For the labs, you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
+For the labs, please bring your laptop, and you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
 
 During the sessions lab the instructor will use IPython/Jupyter. If you are interested to use too, you can obtain it from [here] (https://ipython.org) (optional).
 
