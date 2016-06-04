@@ -16,7 +16,8 @@ For the labs, please bring your laptop, and you should have a working installati
 
 During the sessions lab the instructor will use IPython/Jupyter. If you are interested to use too, you can obtain it from [here] (https://ipython.org) (optional).
 
-We will use a virtual environment virtualenv to install TensorFlow (this will not overwrite existing versions of Python packages from other projects required by TensorFlow).
+##### Virtualenv
+We will use a virtual environment virtualenv, a tool to create isolated Python environments to install TensorFlow. This will not overwrite existing versions and dependencies (and indirectly permissions) of Python packages from other projects required by TensorFlow in your laptop.  Virtualenv creates an environment that has its own installation directories, that doesn’t share libraries with other virtualenv environments (and optionally doesn’t access the globally installed libraries either).
 
 First, you should install pip and virtualenv if they are not already installed, like the follow script shows:
 ```
@@ -27,20 +28,24 @@ $ sudo apt-get install python-pip python-dev python-virtualenv
 $ sudo easy_install pip
 $ sudo pip install --upgrade virtualenv
 ```
-environment virtualenv in the ~/tensorflow directory:
+Virtualenv has one basic command: virtualenv. We suggest to create telecomBCN directory to place the new virtual environment for this hads-on
 
 ```
-$ virtualenv --system-site-packages ~/tensorflow
+$ virtualenv --system-site-packages ~/telecomBCN
 ```
 
-The next step is to activate the virtualenv. This can be done as follows:
+The python in your new virtualenv ~/telecomBCN directory is effectively isolated from the python that was used to create it. In a newly created virtualenv there will also be a activate shell script. The next step is to activate the virtualenv. This can be done as follows:
 
 ```
-$ source ~/tensorflow/bin/activate #  with bash 
-$ source ~/tensorflow/bin/activate.csh #  with csh
-(tensorflow)$
+$ source ~/telecomBCN/bin/activate #  with bash 
+$ source ~/telecomBCN/bin/activate.csh #  with csh
 ```
-The name of the virtual environment in which we are working will appear at the beginning of each command line from now on. Once the virtualenv is activated, you can use pip to install TensorFlow inside it:
+The activate script will also modify your shell prompt to indicate which environment is currently active (will appear at the beginning of each command line from now on). In our case
+```
+(telecomBCN)$
+```
+If you are interested for more details about virtualenv you can obtain it from [here] (https://virtualenv.pypa.io).
+Once the virtualenv is activated, you can use pip to install TensorFlow inside it:
 
 ```
 # Ubuntu/Linux 64-bit, CPU only:
