@@ -44,19 +44,21 @@ The activate script will also modify your shell prompt to indicate which environ
 ```
 (telecomBCN)$
 ```
-If you are interested for more details about virtualenv you can obtain it from [here] (https://virtualenv.pypa.io).
+If you are interested for more details about virtualenv you can obtain it from [here] (https://pypi.python.org/pypi/virtualenv).
+
+##### Install TensorFlow
 Once the virtualenv is activated, you can use pip to install TensorFlow inside it:
 
 ```
 # Ubuntu/Linux 64-bit, CPU only:
-(tensorflow)$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.7.1-cp27-none-linux_x86_64.whl 
+(telecomBCN)$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl 
 
 # Mac OS X, CPU only:
-(tensorflow)$ sudo easy_install --upgrade six
-(tensorflow)$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/mac/tensorflow-0.7.1-cp27-none-any.whl
+AQUEST CREC QUE NO CAL --> (telecomBCN)$ sudo easy_install --upgrade six
+(telecomBCN)$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/mac/tensorflow-0.8.0-py2-none-any.whl
 ```
 
-The exemples in this hands-on will require also the following packages: 
+The exemples in this hands-on will require install the following packages: 
 
 ```
 $ sudo pip install numpy
@@ -83,8 +85,11 @@ If the result is 9, it means that TensorFlow is proferly installed.
 Finally, when you’ve finished, you should disable the virtual environment as follows:
 
 ```
-(tensorflow)$ deactivate
+(telecomBCN)$ deactivate
 ```
+
+DIR AQUÍ COM DESCARREGAR DEL GITHUB ELS EXEMPLES
+
 
 #### Day 1 - TensorFlow basics
 
