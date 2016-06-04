@@ -1,5 +1,5 @@
 
-## Course First Contact With TensorFlow
+# Course First Contact With TensorFlow
 This course, as part of [Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona)] (http://telecomBCN.DeepLearning.Barcelona) is basically a hands-on tutorial that provides a quick start to building applications using TensorFlow. and we will teach the esential ideas of Tensorflow ecosystem.
 ## Course details
 
@@ -17,7 +17,7 @@ We assume that the student has a `Ubuntu/Linux 64-bit` or `Mac OS X`  environmen
 #### Grading
 Course grade are comprised of 3 homework assignments by groups (30%) and individual class attendance (70%).
 
-### Installation instructions (do it before the course starts)
+## Installation instructions (do it before the course starts)
 For the sessions, please bring your laptop, and you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
 
 During the sessions lab the instructor could use IPython/Jupyter. If you are interested to use too, you can obtain it from [here] (https://ipython.org) (optional).
