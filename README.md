@@ -10,6 +10,7 @@ as a basic documentation. You can acces a [freely available on-line copy] (http:
 
 We assume that the student has some basic knowledge about Python. If not, a Python Quick Start hands-on that will help to start with this language can be found [here (Python Quick Start)](http://www.jorditorres.org/teaching-activity/hands-on-1-python-quick-start/).
 
+We assume that the student has a `Ubuntu/Linux 64-bit` or `Mac OS X`  environment. If the student has has Windows environment we suggest to use VirtualBox in order to run a Linux in a separate virtual machine. You can follow the hands-on *RUN A LINUX OS IN A VIRTUAL MACHINE* to install it [from this web](http://www.jorditorres.org/teaching-activity/hands-on-0-run-a-linux-os-in-a-virtual-machine/).
 
 #### TensorFlow installation (do it before the course starts)
 For the labs, please bring your laptop, and you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
