@@ -1,21 +1,26 @@
 
-## Hands-on: First Contact With TensorFlow
-This hands-on tutorial provides a quick start to building applications using TensorFlow. This repository contains the information required by the TensorFlow Hands-on at [Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona)] (http://telecomBCN.DeepLearning.Barcelona).
+## Course First Contact With TensorFlow
+This course, as part of [Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona)] (http://telecomBCN.DeepLearning.Barcelona) is basically a hands-on tutorial that provides a quick start to building applications using TensorFlow. and we will teach the esential ideas of Tensorflow ecosystem.
+## Course details
 
-
-#### Documentation
+#### Documentation/Textbook
 
 We will use the book [First Contact with TensorFlow] (http://www.jorditorres.org/first-contact-with-tensorflow-book/) 
-as a basic documentation. You can acces a [freely available on-line copy] (http://www.jorditorres.org/first-contact-with-tensorflow/>). The slides used during the hands-on will be also available before start the course.
+as a basic documentation. You can acces a [freely available on-line copy] (http://www.jorditorres.org/first-contact-with-tensorflow/>). The slides used during the hands-on will be also available before start the course. Additional documentation will be distributed during the course.
+
+#### Prerequisites
 
 We assume that the student has some basic knowledge about Python. If not, a Python Quick Start hands-on that will help to start with this language can be found [here (Python Quick Start)](http://www.jorditorres.org/teaching-activity/hands-on-1-python-quick-start/).
 
 We assume that the student has a `Ubuntu/Linux 64-bit` or `Mac OS X`  environment. If the student have a `Windows` environment we suggest to use `VirtualBox` in order to run a Linux in a separate virtual machine. You can follow the hands-on *RUN A LINUX OS IN A VIRTUAL MACHINE* to install it [from this web](http://www.jorditorres.org/teaching-activity/hands-on-0-run-a-linux-os-in-a-virtual-machine/).
 
-#### TensorFlow installation (do it before the course starts)
-For the labs, please bring your laptop, and you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
+#### Grading
+Course grade are comprised of 3 homework assignments by groups (30%) and individual class attendance (70%).
 
-During the sessions lab the instructor will use IPython/Jupyter. If you are interested to use too, you can obtain it from [here] (https://ipython.org) (optional).
+#### Installation instructions (do it before the course starts)
+For the sessions, please bring your laptop, and you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
+
+During the sessions lab the instructor could use IPython/Jupyter. If you are interested to use too, you can obtain it from [here] (https://ipython.org) (optional).
 
 ##### Virtualenv
 We will use a virtual environment `virtualenv`, a tool to create isolated Python environments to install TensorFlow. This will not overwrite existing versions and dependencies (and indirectly permissions) of Python packages from other projects required by TensorFlow in your laptop.  Virtualenv creates an environment that has its own installation directories, that doesn’t share libraries with other virtualenv environments (and optionally doesn’t access the globally installed libraries either).
