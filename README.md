@@ -65,7 +65,8 @@ $ sudo pip install numpy
 $ sudo pip install matplotlib
 ```
 
-In order to be sure that everything is working fine, create a simple TensorFlow code and save it with extension ".py". I suggest the following code
+##### My first code
+In order to be sure that everything is working fine, create a simple TensorFlow code and save it with extension ".py". I suggest to use the following code multiplication.py from the course github:
 
 ```
 import tensorflow as tf
@@ -75,10 +76,16 @@ y = tf.mul(a, b)
 sess = tf.Session()
 print sess.run(y, feed_dict={a: 3, b: 3})
 ```
+You can download it from the github using the git command: 
+```
+(telecomBCN)$ cd telecomBCN
+(telecomBCN)$ git clone https://github.com/jorditorresBCN/FirstContactWithTensorFlow.git
+```
 To run the code, it will be enough with the command 
 
 ```
-$ python test.py
+(telecomBCN)$ cd FirstContactWithTensorFlow
+(telecomBCN)$ python multiplication.py
 ```
 If the result is 9, it means that TensorFlow is proferly installed.
 
@@ -88,7 +95,7 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 (telecomBCN)$ deactivate
 ```
 
-DIR AQUÍ COM DESCARREGAR DEL GITHUB ELS EXEMPLES
+### Code used
 
 
 #### Day 1 - TensorFlow basics
