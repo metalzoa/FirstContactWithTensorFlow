@@ -15,7 +15,7 @@ We assume that the student has some basic knowledge about Python. If not, a Pyth
 We assume that the student has a `Ubuntu/Linux 64-bit` or `Mac OS X`  environment. If the student have a `Windows` environment we suggest to use `VirtualBox` in order to run a Linux in a separate virtual machine. You can follow the hands-on *RUN A LINUX OS IN A VIRTUAL MACHINE* to install it [from this web](http://www.jorditorres.org/teaching-activity/hands-on-0-run-a-linux-os-in-a-virtual-machine/).
 
 #### Grading
-Course grade are comprised of 3 homework assignments by groups (30%) and individual class attendance (70%).
+Course grade are comprised of 3 homework assignments by groups (30%), class exercises (20%) and individual class attendance (50%).
 
 #### Schedule (tentative)
 *This section is under construction*
