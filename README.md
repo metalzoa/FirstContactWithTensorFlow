@@ -17,9 +17,9 @@ For the labs, please bring your laptop, and you should have a working installati
 During the sessions lab the instructor will use IPython/Jupyter. If you are interested to use too, you can obtain it from [here] (https://ipython.org) (optional).
 
 ##### Virtualenv
-We will use a virtual environment virtualenv, a tool to create isolated Python environments to install TensorFlow. This will not overwrite existing versions and dependencies (and indirectly permissions) of Python packages from other projects required by TensorFlow in your laptop.  Virtualenv creates an environment that has its own installation directories, that doesn’t share libraries with other virtualenv environments (and optionally doesn’t access the globally installed libraries either).
+We will use a virtual environment `virtualenv`, a tool to create isolated Python environments to install TensorFlow. This will not overwrite existing versions and dependencies (and indirectly permissions) of Python packages from other projects required by TensorFlow in your laptop.  Virtualenv creates an environment that has its own installation directories, that doesn’t share libraries with other virtualenv environments (and optionally doesn’t access the globally installed libraries either).
 
-First, you should install pip and virtualenv if they are not already installed, like the follow script shows:
+First, you should install `pip` and `virtualenv` if they are not already installed, like the follow script shows:
 ```
 # Ubuntu/Linux 64-bit
 $ sudo apt-get install python-pip python-dev python-virtualenv 
@@ -28,13 +28,13 @@ $ sudo apt-get install python-pip python-dev python-virtualenv
 $ sudo easy_install pip
 $ sudo pip install --upgrade virtualenv
 ```
-Virtualenv has one basic command: virtualenv. We suggest to create telecomBCN directory to place the new virtual environment for this hads-on
+`virtualenv` has one basic command: virtualenv. We suggest to create telecomBCN directory to place the new virtual environment for this hads-on
 
 ```
 $ virtualenv --system-site-packages ~/telecomBCN
 ```
 
-The python in your new virtualenv ~/telecomBCN directory is effectively isolated from the python that was used to create it. In a newly created virtualenv there will also be a activate shell script. The next step is to activate the virtualenv. This can be done as follows:
+The python in your new virtualenv `~/telecomBCN` directory is effectively isolated from the python that was used to create it. In a newly created virtualenv there will also be a activate shell script. The next step is to activate the virtualenv. This can be done as follows:
 
 ```
 $ source ~/telecomBCN/bin/activate #  with bash 
@@ -66,7 +66,7 @@ $ sudo pip install matplotlib
 ```
 
 ##### My first code
-In order to be sure that everything is working fine, create a simple TensorFlow code and save it with extension ".py". I suggest to use the following code multiplication.py from the course github:
+In order to be sure that everything is working fine, create a simple TensorFlow code and save it with extension ".py". I suggest to use the following code `multiplication.py` from the course github:
 
 ```
 import tensorflow as tf
@@ -87,7 +87,7 @@ To run the code, it will be enough with the command
 (telecomBCN)$ cd FirstContactWithTensorFlow
 (telecomBCN)$ python multiplication.py
 ```
-If the result is 9.0, it means that TensorFlow is properly installed.
+If the result is `9.0`, it means that TensorFlow is properly installed.
 
 ##### Disable the virtual environment
 Finally, when you’ve finished, you should disable the virtual environment as follows:
@@ -96,7 +96,7 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 (telecomBCN)$ deactivate
 ```
 
-#### CodeS used during the course
+#### Codes used during the course
 
 
 ##### Day 1 - TensorFlow basics
