@@ -87,35 +87,36 @@ To run the code, it will be enough with the command
 (telecomBCN)$ cd FirstContactWithTensorFlow
 (telecomBCN)$ python multiplication.py
 ```
-If the result is 9, it means that TensorFlow is proferly installed.
+If the result is 9.0, it means that TensorFlow is properly installed.
 
+##### Disable the virtual environment
 Finally, when you’ve finished, you should disable the virtual environment as follows:
 
 ```
 (telecomBCN)$ deactivate
 ```
 
-### Code used
+#### CodeS used during the course
 
 
-#### Day 1 - TensorFlow basics
+##### Day 1 - TensorFlow basics
 
 - [multiplication.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/multiplicacion.py) 
 
-#### Day 2 - TensorFlow's coding basics
+##### Day 2 - TensorFlow's coding basics
 
 - [regression.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression.py) 
 
-#### Day 3 - TensorFlow basic data structures
+##### Day 3 - TensorFlow basic data structures
 
 - [clustering.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/clustering.py) 
 
-#### Day 4 - Single Layer Neural Network
+####3 Day 4 - Single Layer Neural Network
 
 - [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
 - [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
 
-#### Day 5 - Multi-Layer Neural Networks
+##### Day 5 - Multi-Layer Neural Networks
 
 - [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
 
