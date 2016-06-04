@@ -17,6 +17,8 @@ We assume that the student has a `Ubuntu/Linux 64-bit` or `Mac OS X`  environmen
 #### Grading
 Course grade are comprised of 3 homework assignments by groups (30%) and individual class attendance (70%).
 
+#### Schedule (tentative)
+*This section is under construction*
 ## Installation instructions (do it before the course starts)
 For the sessions, please bring your laptop, and you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
 
@@ -102,8 +104,7 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 (telecomBCN)$ deactivate
 ```
 
-### Codes used during the course
-
+## Codes used during the course (section not finished yet)
 
 ##### Day 1 - TensorFlow basics
 
@@ -126,7 +127,7 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 
 - [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
 
-#### Handly references
+## Handly references (section not finished yet)
 
 - IPython/Jupyter Notebook documentation: [http://ipython.readthedocs.io/en/stable/](http://ipython.readthedocs.io/en/stable/)
 - Matplotlib Python plotting library: [http://matplotlib.org/](http://matplotlib.org/)
