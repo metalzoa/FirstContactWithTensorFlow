@@ -17,12 +17,12 @@ We assume that the student has a `Ubuntu/Linux 64-bit` or `Mac OS X`  environmen
 #### Grading
 Course grade are comprised of 3 homework assignments by groups (30%) and individual class attendance (70%).
 
-#### Installation instructions (do it before the course starts)
+### Installation instructions (do it before the course starts)
 For the sessions, please bring your laptop, and you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
 
 During the sessions lab the instructor could use IPython/Jupyter. If you are interested to use too, you can obtain it from [here] (https://ipython.org) (optional).
 
-##### Virtualenv
+#### Virtual environment-based installation
 We will use a virtual environment `virtualenv`, a tool to create isolated Python environments to install TensorFlow. This will not overwrite existing versions and dependencies (and indirectly permissions) of Python packages from other projects required by TensorFlow in your laptop.  Virtualenv creates an environment that has its own installation directories, that doesn’t share libraries with other virtualenv environments (and optionally doesn’t access the globally installed libraries either).
 
 First, you should install `pip` and `virtualenv` if they are not already installed, like the follow script shows:
@@ -52,7 +52,7 @@ The activate script will also modify your shell prompt to indicate which environ
 ```
 If you are interested for more details about virtualenv you can obtain it from [here] (https://pypi.python.org/pypi/virtualenv).
 
-##### Install TensorFlow
+#### Install TensorFlow
 Once the virtualenv is activated, you can use pip to install TensorFlow inside it:
 
 ```
@@ -71,7 +71,7 @@ $ sudo pip install numpy
 $ sudo pip install matplotlib
 ```
 
-##### My first code
+#### My first code
 In order to be sure that everything is working fine, create a simple TensorFlow code and save it with extension ".py". I suggest to use the following code `multiplication.py` from the course github:
 
 ```
@@ -95,14 +95,14 @@ To run the code, it will be enough with the command
 ```
 If the result is `9.0`, it means that TensorFlow is properly installed.
 
-##### Disable the virtual environment
+#### Disable the virtual environment
 Finally, when you’ve finished, you should disable the virtual environment as follows:
 
 ```
 (telecomBCN)$ deactivate
 ```
 
-#### Codes used during the course
+### Codes used during the course
 
 
 ##### Day 1 - TensorFlow basics
