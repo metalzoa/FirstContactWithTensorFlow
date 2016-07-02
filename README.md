@@ -104,33 +104,41 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 (telecomBCN)$ deactivate
 ```
 
-## Codes used during the course (section not finished yet)
 
+## Course content (the slides and codes used during the sessions will be posted/updated 2 hours before the session)
+##### Day 1 (Monday 04/07/2016) 
+- How to build basic TensorFlow graphs and how to train models
+- Case study: Linear Regression in TensorFlow
+##### Day 2 (Tuesday 05/07/2016) 
+- Basic data structures in TensorFlow
+- Case study: Clustering in TensorFlow 
+##### Day 3 (Wednesday 06/07/2016)  
+- Single Layer Neural Network in TensorFlow
+- TensorBoard 
+##### Day 4 (Thursday 07/07/2016)  
+- Convolutional Neural Networks in TensorFlow
+- TensorFlow High Level APIs: SLIM
+##### Day 5 (Friday 08/07/2016)  
+- Recurrent Neural Networks in TensorFlow
+
+
+## Codes used during the course
+###(the slides and codes used during the sessions will be posted/updated 2 hours before the session)
 ##### Day 1 - TensorFlow basics
-
+- Slides
 - [multiplication.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/multiplicacion.py) 
-
-##### Day 2 - TensorFlow's coding basics
-
 - [regression.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression.py) 
-
-##### Day 3 - TensorFlow basic data structures
-
+##### Day 2 - TensorFlow's coding basics
+- Slides
 - [clustering.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/clustering.py) 
-
-####3 Day 4 - Single Layer Neural Network
-
+##### Day 3 - TensorFlow basic data structures
+- Slides
 - [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
 - [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
-
-##### Day 5 - Multi-Layer Neural Networks
-
+##### Day 4 - Single Layer Neural Network
+- Slides
 - [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
+##### Day 5 - Multi-Layer Neural Networks
+- Slides
 
-## Handly references (section not finished yet)
-
-- IPython/Jupyter Notebook documentation: [http://ipython.readthedocs.io/en/stable/](http://ipython.readthedocs.io/en/stable/)
-- Matplotlib Python plotting library: [http://matplotlib.org/](http://matplotlib.org/)
-- Pandas Python dataframe: [http://pandas.pydata.org/](http://pandas.pydata.org/)
-- Numpy Python scientific computation library: [http://numpy.org/](http://numpy.org/)
 
