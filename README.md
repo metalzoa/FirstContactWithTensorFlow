@@ -19,6 +19,31 @@ Course grade are comprised of 3 homework assignments by groups (30%), class exer
 
 #### Schedule (tentative)
 *This section is under construction*
+
+##### Day 1 (Monday 04/07/2016) 
+
+- How to build basic TensorFlow graphs and how to train models
+- Case study: Linear Regression in TensorFlow
+
+##### Day 2 (Tuesday 05/07/2016) 
+
+- Basic data structures in TensorFlow
+- Case study: Clustering in TensorFlow 
+
+##### Day 3 (Wednesday 06/07/2016)  
+
+- Single Layer Neural Network in TensorFlow
+- TensorBoard 
+
+##### Day 4 (Thursday 07/07/2016)  
+
+- Convolutional Neural Networks in TensorFlow
+- TensorFlow High Level APIs: SLIM
+
+##### Day 5 (Friday 08/07/2016)  
+
+- Recurrent Neural Networks in TensorFlow
+
 ## Installation instructions (do it before the course starts)
 For the sessions, please bring your laptop, and you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
 
@@ -105,39 +130,32 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 ```
 
 
-## Course content (the slides and codes used during the sessions will be posted/updated 2 hours before the session)
-##### Day 1 (Monday 04/07/2016) 
-- How to build basic TensorFlow graphs and how to train models
-- Case study: Linear Regression in TensorFlow
-##### Day 2 (Tuesday 05/07/2016) 
-- Basic data structures in TensorFlow
-- Case study: Clustering in TensorFlow 
-##### Day 3 (Wednesday 06/07/2016)  
-- Single Layer Neural Network in TensorFlow
-- TensorBoard 
-##### Day 4 (Thursday 07/07/2016)  
-- Convolutional Neural Networks in TensorFlow
-- TensorFlow High Level APIs: SLIM
-##### Day 5 (Friday 08/07/2016)  
-- Recurrent Neural Networks in TensorFlow
-
-
 ## Codes used during the course
+
 ###(the slides and codes used during the sessions will be posted/updated 2 hours before the session)
+
 ##### Day 1 - TensorFlow basics
+
 - Slides
 - [multiplication.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/multiplicacion.py) 
 - [regression.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression.py) 
+
 ##### Day 2 - TensorFlow's coding basics
+
 - Slides
 - [clustering.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/clustering.py) 
+
 ##### Day 3 - TensorFlow basic data structures
+
 - Slides
 - [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
 - [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
+
 ##### Day 4 - Single Layer Neural Network
+
 - Slides
 - [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
+
 ##### Day 5 - Multi-Layer Neural Networks
 - Slides
 
