@@ -52,29 +52,29 @@ as a basic documentation. You can acces a [freely available on-line copy] (http:
 
 The slides and codes used during the sessions will be posted/updated 2 hours before the session:
 
-##### Day 1 - TensorFlow basics
+##### Day 1
 
 - Slides
 - [multiplication.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/multiplicacion.py) 
 - [regression.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression.py) 
 
-##### Day 2 - TensorFlow's coding basics
+##### Day 2
 
 - Slides
 - [clustering.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/clustering.py) 
 
-##### Day 3 - TensorFlow basic data structures
+##### Day 3
 
 - Slides
 - [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
 - [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
 
-##### Day 4 - Single Layer Neural Network
+##### Day 4
 
 - Slides
 - [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
 
-##### Day 5 - Multi-Layer Neural Networks
+##### Day 5
 - Slides
 
 
