@@ -3,10 +3,10 @@
 This course, as part of [Summer Seminar ETSETB TelecomBCN, 4-8 July 2016 (http://telecomBCN.DeepLearning.Barcelona)] (http://telecomBCN.DeepLearning.Barcelona) is basically a hands-on tutorial that provides a quick start to building applications using TensorFlow. and we will teach the esential ideas of Tensorflow ecosystem.
 ## Course details
 
-#### Documentation/Textbook
+#### Instructors
 
-We will use the book [First Contact with TensorFlow] (http://www.jorditorres.org/first-contact-with-tensorflow-book/) 
-as a basic documentation. You can acces a [freely available on-line copy] (http://www.jorditorres.org/first-contact-with-tensorflow/>). The slides used during the hands-on will be also available before start the course. Additional documentation will be distributed during the course.
+- [Maurici Yagües](https://bsc.es/about-bsc/staff-directory/yagues-maurici), Research engineer at BSC-CNS
+- [Jordi Torres](http://www.JordiTorres.Barcelona), Professor at UPC and Researcher at BSC-CNS
 
 #### Prerequisites
 
@@ -18,7 +18,6 @@ We assume that the student has a `Ubuntu/Linux 64-bit` or `Mac OS X`  environmen
 Course grade are comprised of 3 homework assignments by groups (30%), class exercises (20%) and individual class attendance (50%).
 
 #### Schedule (tentative)
-*This section is under construction*
 
 ##### Day 1 (Monday 04/07/2016) 
 
@@ -43,6 +42,41 @@ Course grade are comprised of 3 homework assignments by groups (30%), class exer
 ##### Day 5 (Friday 08/07/2016)  
 
 - Recurrent Neural Networks in TensorFlow
+
+
+
+#### Documentation/Textbook
+
+We will use the book [First Contact with TensorFlow] (http://www.jorditorres.org/first-contact-with-tensorflow-book/) 
+as a basic documentation. You can acces a [freely available on-line copy] (http://www.jorditorres.org/first-contact-with-tensorflow/>). The slides used during the hands-on will be also available before start the course. Additional documentation will be distributed during the course.
+
+The slides and codes used during the sessions will be posted/updated 2 hours before the session:
+
+##### Day 1 - TensorFlow basics
+
+- Slides
+- [multiplication.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/multiplicacion.py) 
+- [regression.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression.py) 
+
+##### Day 2 - TensorFlow's coding basics
+
+- Slides
+- [clustering.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/clustering.py) 
+
+##### Day 3 - TensorFlow basic data structures
+
+- Slides
+- [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
+- [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
+
+##### Day 4 - Single Layer Neural Network
+
+- Slides
+- [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
+
+##### Day 5 - Multi-Layer Neural Networks
+- Slides
+
 
 ## Installation instructions (do it before the course starts)
 For the sessions, please bring your laptop, and you should have a working installation of Python. TensorFlow has a Python API (plus a C / C ++) that requires the installation of Python 2.7. Nowadays many Linux and UNIX distributions include a recent Python.If this is not the case I assume that any student who take this course knows how to install it from the [general download page]( https://www.python.org/downloads/). 
@@ -130,33 +164,5 @@ Finally, when you’ve finished, you should disable the virtual environment as f
 ```
 
 
-## Codes used during the course
-
-###(the slides and codes used during the sessions will be posted/updated 2 hours before the session)
-
-##### Day 1 - TensorFlow basics
-
-- Slides
-- [multiplication.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/multiplicacion.py) 
-- [regression.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression.py) 
-
-##### Day 2 - TensorFlow's coding basics
-
-- Slides
-- [clustering.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/clustering.py) 
-
-##### Day 3 - TensorFlow basic data structures
-
-- Slides
-- [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
-- [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
-
-##### Day 4 - Single Layer Neural Network
-
-- Slides
-- [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
-
-##### Day 5 - Multi-Layer Neural Networks
-- Slides
 
 
