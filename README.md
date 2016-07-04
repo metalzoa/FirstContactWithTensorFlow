@@ -54,7 +54,7 @@ The slides and codes used during the sessions will be posted/updated 2 hours bef
 
 ##### Day 1
 
-- Slides
+- [SLIDES (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day1.pdf)
 - [multiplication.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/multiplication.py) 
 - [regression.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression.py) 
 
