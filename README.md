@@ -62,6 +62,7 @@ The slides and codes used during the sessions will be posted/updated 2 hours bef
 
 - [SLIDES (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day2.pdf)
 - [clustering.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/clustering.py) 
+- [multiGPU.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiGPU.py) 
 
 ##### Day 3
 
