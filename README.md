@@ -66,9 +66,10 @@ The slides and codes used during the sessions will be posted/updated 2 hours bef
 
 ##### Day 3
 
-- Slides
+- [SLIDES (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day3.pdf)
 - [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
 - [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
+- 
 
 ##### Day 4
 
