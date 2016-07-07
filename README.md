@@ -76,7 +76,7 @@ The slides and codes used during the sessions will be posted/updated 2 hours bef
 
 - [SLIDES 4 (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day4.pdf)
 - [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
-- [slim_contrib.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/slim_contrib.py)
+- [slim_contrib.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/slim_contrib.py) (requires TF version 0.9)
 
 ##### Day 5
 - Slides
