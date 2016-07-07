@@ -69,7 +69,7 @@ The slides and codes used during the sessions will be posted/updated 2 hours bef
 - [SLIDES 3 (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day3.pdf)
 - [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
 - [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
-- [regression_tb.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression_tb.py) 
+- [regression_tb.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression_tb.py) (warning: use Google Chrome as a browser)
 - [regression_tb_md.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression_tb_md.py) 
 
 ##### Day 4
