@@ -1,7 +1,9 @@
 import numpy as np
 import tensorflow as tf
-#from tensorflow.python.client import timeline
+from tensorflow.python.client import timeline
 
+run_options = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
+run_metadata = tf.RunMetadata()
 
 tf.set_random_seed(1234)
 
@@ -38,9 +40,7 @@ sess = tf.Session()
 merged = tf.merge_all_summaries()
 writer = tf.train.SummaryWriter('/tmp/regression/run1', sess.graph)
 
-run_options = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
-run_metadata = tf.RunMetadata()
-#trace = timeline.Timeline(step_stats=run_metadata.step_stats)
+
 
 sess.run(init)
 
@@ -53,6 +53,9 @@ for step in range(1, 101):
         print('Step %.3d ; W = %.5f ; b = %.5f; loss = %.5f' % (step, slope, intercept, error))
     if step % 50 == 0:
         writer.add_run_metadata(run_metadata, 'step%d' % step)
+
+
+#trace = timeline.Timeline(step_stats=run_metadata.step_stats)
 
 #with open('timeline.ctf.json', 'w') as outfile:
 #    outfile.write(trace.generate_chrome_trace_format())
