@@ -54,19 +54,19 @@ The slides and codes used during the sessions will be posted/updated 2 hours bef
 
 ##### Day 1
 
-- [SLIDES (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day1.pdf)
+- [SLIDES 1 (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day1.pdf)
 - [multiplication.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/multiplication.py) 
 - [regression.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression.py) 
 
 ##### Day 2
 
-- [SLIDES (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day2.pdf)
+- [SLIDES 2 (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day2.pdf)
 - [clustering.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/clustering.py) 
 - [multiGPU.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiGPU.py) 
 
 ##### Day 3
 
-- [SLIDES (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day3.pdf)
+- [SLIDES 3 (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day3.pdf)
 - [SingleLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/SingleLayerNeuralNetwork.py)
 - [input_data.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/input_data.py)
 - [regression_tb.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/regression_tb.py) 
@@ -74,8 +74,9 @@ The slides and codes used during the sessions will be posted/updated 2 hours bef
 
 ##### Day 4
 
-- Slides
+- [SLIDES 4 (pdf)](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/TF.course.slides.day4.pdf)
 - [MultiLayerNeuralNetwork.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/MultiLayerNeuralNetworks.py)
+- [slim_contrib.py](https://github.com/jorditorresBCN/FirstContactWithTensorFlow/blob/master/slim_contrib.py)
 
 ##### Day 5
 - Slides
