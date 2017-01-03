@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
+
 import tensorflow as tf
+
 
 # 리니어 리그리션 에서는 민 스퀘어
 # 로지스틱 에서는 크로스 엔트로피 사용
@@ -206,9 +208,10 @@ sess = tf.Session()
 sess.run(init)
 for i in range(500) :
     _, cost_rate = sess.run([train,cost],  feed_dict=tensor_map)
-    print "Train retry  : ", i
-    print "Cost : ", cost_rate
-    print "-----------------------------------"
+    if i % 10 == 0:
+        print "Train retry  : ", i
+        print "Cost : ", cost_rate
+        print "-----------------------------------"
 
 sess.close()
 
