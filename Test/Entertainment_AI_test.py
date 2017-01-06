@@ -187,6 +187,10 @@ b_h2 = tf.Variable(tf.zeros(shape=[HIDDEN2_SIZE]), dtype=tf.float32)  # 디멘�
 W_o = tf.Variable(tf.truncated_normal(shape=[HIDDEN2_SIZE, CLASSES]))
 b_o = tf.Variable(tf.zeros(shape=[CLASSES]), dtype=tf.float32)
 
+#saver 레이어
+param_list = [W_h1, b_h1, W_h2, b_h2, W_o, b_o]  #
+saver = tf.train.Saver(param_list)
+
 # 로지스틱 이기 때문에 시그모이드 사용 한다
 hidden1 = tf.sigmoid(tf.matmul(x, W_h1) + b_h1)  # softmax 는 sigmod 를 정규화한 모델
 hidden2 = tf.sigmoid(tf.matmul(hidden1, W_h2) + b_h2)
@@ -204,13 +208,21 @@ train = tf.train.GradientDescentOptimizer(Learning_rate).minimize(cost)
 init = tf.initialize_all_variables()
 ## 여기 까지가 모델 설계 끝난것임
 ## 다음은 훈련
+
+correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 sess = tf.Session()
+
+
 sess.run(init)
-for i in range(500) :
-    _, cost_rate = sess.run([train,cost],  feed_dict=tensor_map)
-    if i % 10 == 0:
+for i in range(2000) :
+    _, cost_rate, acc, yy_, o_ = sess.run([train,cost, accuracy, y, W_o],  feed_dict=tensor_map)
+    pred = sess.run(tf.argmax(y, 1), tensor_map)
+    if i % 100 == 0:
         print "Train retry  : ", i
         print "Cost : ", cost_rate
+        print "Accuracy : ", acc * 100 , " %"
+        saver.save(sess, '/Users/Naver/tensorflow_save/save')
         print "-----------------------------------"
 
 sess.close()
