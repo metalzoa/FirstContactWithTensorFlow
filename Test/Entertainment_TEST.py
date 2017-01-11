@@ -49,38 +49,21 @@ import tensorflow as tf
 
 input_data = [
     [1, 1, 1, 1, 0, # 힙합
-     0, 0, 0, 0, 0, # 발라드
+     1, 0, 0, 0, 0, # 발라드
      0, 0, 0, 0, 0, # 댄스
      0, 0, 0, 0, 0], # 트로트
-
-
 
     # -----------------------------------------------------------------------------
 
     [0, 0, 0, 0, 0,
      1, 1, 1, 1, 0,
-     0, 0, 0, 0, 0,
+     1, 0, 0, 0, 0,
      0, 0, 0, 0, 0]
-
-
-
-    # -----------------------------------------------------------------------------
-
 
     # -----------------------------------------------------------------------------
 
 ]
 
-
-label_data = [  [1, 0, 0, 0],
-
-
-                [0, 1, 0, 0]
-
-
-
-
-              ]
 
 # NN 멀티로 구성 한다 가정 하고 몇가지 상수 정의
 # 왜 상수 인데 tf.constants 로 정의 안하냐고 생각 할수 있게지만, 그래프로 만들 상수가 아니여서 일반 상수로 했다 생각 하면됨
@@ -88,15 +71,14 @@ INPUT_SIZE = 20
 HIDDEN1_SIZE = 10
 HIDDEN2_SIZE = 8
 CLASSES = 4
-Learning_rate = 0.5
 
 # 일반적인 가설 모델인 Wx +  B  라 가정 하고
 x = tf.placeholder(tf.float32, shape=[None, INPUT_SIZE], name='x')
-y_ = tf.placeholder(tf.float32, shape=[None, CLASSES], name='y_')
+#y_ = tf.placeholder(tf.float32, shape=[None, CLASSES], name='y_')
 
 # placeholder  는 맵핑을 해주어야 함
 # place 는 주로 일반적인 입력 데이터를 tensor 로 변환 하기 위해서 사용하고 변환 과정 전에 아래 처럼 맴핑을 한번 해줌
-tensor_map = {x: input_data, y_: label_data}
+tensor_map = {x: input_data}
 
 # 입력 레이어에 대한 가중치 모델링
 # truncated_normal 은 가중치 값을 일반적인 확률분포를 이용해서 주겠다는 의미
