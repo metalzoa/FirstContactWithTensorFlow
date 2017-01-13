@@ -43,6 +43,7 @@ import tensorflow as tf
 
 """
 
+#####  입력 ############################
 # [힙합, 발라드, 댄스 트로트] 피처에 대한 입력을 메트릭스로 변환피처에 대한 입력을 메트릭스로 변환
 
 input_data = [
@@ -51,16 +52,12 @@ input_data = [
      0, 0, 0, 0, 0, # 댄스
      0, 0, 0, 0, 0], # 트로트
 
-
-
     # -----------------------------------------------------------------------------
 
     [0, 0, 0, 0, 0,
      1, 1, 1, 1, 0,
      1, 0, 0, 0, 0,
      0, 0, 0, 0, 0],
-
-
 
     # -----------------------------------------------------------------------------
     [1, 0, 0, 0, 0,
@@ -75,16 +72,13 @@ input_data = [
 
 ]
 
-
 label_data = [  [1, 0, 0, 0],
                 [0, 1, 0, 0],
                 [0, 0, 1, 0],
                 [0, 0, 0, 1]
-
-
-
-
               ]
+
+#####  모델링 ############################
 
 # NN 멀티로 구성 한다 가정 하고 몇가지 상수 정의
 # 왜 상수 인데 tf.constants 로 정의 안하냐고 생각 할수 있게지만, 그래프로 만들 상수가 아니여서 일반 상수로 했다 생각 하면됨
@@ -92,7 +86,7 @@ INPUT_SIZE = 20
 HIDDEN1_SIZE = 10
 HIDDEN2_SIZE = 8
 CLASSES = 4
-Learning_rate = 0.5
+Learning_rate = 0.9
 
 # 일반적인 가설 모델인 Wx +  B  라 가정 하고
 x = tf.placeholder(tf.float32, shape=[None, INPUT_SIZE], name='x')
@@ -121,38 +115,53 @@ param_list = [W_h1, b_h1, W_h2, b_h2, W_o, b_o]  #
 saver = tf.train.Saver(param_list)
 
 # 로지스틱 이기 때문에 시그모이드 사용 한다
-hidden1 = tf.sigmoid(tf.matmul(x, W_h1) + b_h1, name='hidden1')  # softmax 는 sigmod 를 정규화한 모델
-hidden2 = tf.sigmoid(tf.matmul(hidden1, W_h2) + b_h2, name='hidden2')
+with tf.name_scope('hidden_layer1') as h1_scope:
+    hidden1 = tf.sigmoid(tf.matmul(x, W_h1) + b_h1, name='hidden1')  # softmax 는 sigmod 를 정규화한 모델
 
-y = tf.sigmoid(tf.matmul(hidden2, W_o) + b_o, name='y')  # 왜 softmax 를 사용 하지 않고 sigmoid 를 적용 했냐 하면, 근간이 되는 요소를 노출 하기 위해서 이다
+with tf.name_scope('hidden_layer2') as h2_scope:
+    hidden2 = tf.sigmoid(tf.matmul(hidden1, W_h2) + b_h2, name='hidden2')
+
+with tf.name_scope('output_layer') as output_scope:
+    y = tf.sigmoid(tf.matmul(hidden2, W_o) + b_o, name='y')  # 왜 softmax 를 사용 하지 않고 sigmoid 를 적용 했냐 하면, 근간이 되는 요소를 노출 하기 위해서 이다
                                                 # softmax 내부가 sigmoid 를 더 가공한것에 불과 하다
 
 # 코스트 모듈 (선택 해서 사용 하면됨)
 #cost = tf.reduce_mean(-y_ * tf.log(y) - (1 - y) * tf.log(1 - y),name='cost')  ## 전체 cost 를 평균낸값
-cost = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=[1]))
+with tf.name_scope('cost') as cost:
+    cost = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=[1]))
+    tf.summary.scalar('cost_result', cost)
 
 # cost = -tf.reduce_sum(y_*tf.log(y))
 
 # 최소화 적용
-train = tf.train.GradientDescentOptimizer(Learning_rate).minimize(cost)
+with tf.name_scope('train') as train:
+    train = tf.train.GradientDescentOptimizer(Learning_rate).minimize(cost)
 
 init = tf.initialize_all_variables()
 ## 여기 까지가 모델 설계 끝난것임
 ## 다음은 훈련
 
-correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
-accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+with tf.name_scope('result') as result:
+    correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+
+
 sess = tf.Session()
 
+merge = tf.merge_all_summaries()
 
+#####  80% 데이터 훈련 ############################
 sess.run(init)
 for i in range(1000) :
-    _, cost_rate, acc, yy_, o_ = sess.run([train,cost, accuracy, y, W_o],  feed_dict=tensor_map)
+    summary, _, cost_rate, acc, yy_, o_ = sess.run([merge, train,cost, accuracy, y, W_o],  feed_dict=tensor_map)
     pred = sess.run(tf.argmax(y, 1), tensor_map)
     if i % 100 == 0:
-        print "Train retry  : ", i
-        print "Cost : ", cost_rate
-        print "Accuracy : ", acc * 100 , " %"
+        print "반복 훈련  : ", i
+        print "모델 정확도 : ", cost_rate
+        print "결과 정확도 : ", acc * 100 , " %"
+        train_writer = tf.train.SummaryWriter('/Users/Naver/tensorflow_summary/', sess.graph)
+        train_writer.add_summary(summary, i)
+
         saver.save(sess, '/Users/Naver/tensorflow_save/save')
         print "-----------------------------------"
 
