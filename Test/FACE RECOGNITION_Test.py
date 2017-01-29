@@ -33,49 +33,32 @@ y_ = tf.reshape(y_, [-1,1])
 image_width = 330
 image_height = 330
 
-#x = tf.placeholder(tf.float32, shape=[None, image_width, image_height])
-#y_ = tf.placeholder(tf.float32, shape=[None, 1])
+# ------------------------------------------------------------
+hidden1_w = tf.Variable(tf.truncated_normal([5, 5, 1, 32]))
+hidden1_b = tf.Variable(tf.zeros([32]))
 
+hidden2_w = tf.Variable(tf.truncated_normal([5, 5, 32, 64]))
+hidden2_b = tf.Variable(tf.truncated_normal([64]))
 
-W_hidden1 = tf.Variable(tf.truncated_normal([5,5,1,32]))
-b_hidden1 = tf.Variable(tf.zeros([32]))
-
-x_image = tf.reshape(x, shape=[-1, image_width, image_height, 1])
-
-conv1 = tf.nn.conv2d(x_image, W_hidden1, strides=[1,1,1,1], padding="SAME")
-hidden1 = tf.nn.relu(conv1+b_hidden1)
-
-W_hidden2 = tf.Variable(tf.truncated_normal([5,5,32,64]))
-b_hidden2 = tf.Variable(tf.truncated_normal([64]))
-
-conv2 = tf.nn.conv2d(hidden1, W_hidden2, strides=[1,1,1,1], padding="SAME")
-hidden2 = tf.nn.relu(conv2+b_hidden2)
-
-h_flat = tf.reshape(hidden2, [-1,image_width*image_height*64])
 fc_w = tf.Variable(tf.truncated_normal([image_width*image_height*64,10]))
 fc_b = tf.Variable(tf.zeros([10]))
 
-print h_flat
-print fc_w
-
+out_w = tf.Variable(tf.truncated_normal([10, 1]))
+out_b = tf.Variable(tf.zeros([1]))
+# --------------------------------------------------------------
+x_image = tf.reshape(x, shape=[-1, image_width, image_height, 1])
+h1 = tf.nn.relu(tf.nn.conv2d(x_image, hidden1_w, strides=[1, 1, 1, 1], padding="SAME") + hidden1_b)
+h2 = tf.nn.relu(tf.nn.conv2d(h1, hidden2_w, strides=[1, 1, 1, 1], padding="SAME") + hidden2_b)
+h_flat = tf.reshape(h2, [-1, image_width * image_height * 64])
 h_fc1 = tf.nn.relu(tf.matmul(h_flat, fc_w) + fc_b)
-
-W_out = tf.Variable(tf.truncated_normal([10, 1]))
-b_out = tf.Variable(tf.zeros([1]))
-
-pred = tf.matmul(h_fc1, W_out) +b_out
-
-print '---'
-print pred
-print y_
+pred = tf.matmul(h_fc1, out_w) + out_b
 
 loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(pred, y_))
-train = tf.train.AdamOptimizer(1e-1).minimize(loss)
-
+train = tf.train.AdamOptimizer(1e-4).minimize(loss)
 correct_prediction = tf.equal(tf.argmax(pred,1), tf.argmax(y_,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
-
+# --------------------------------------------------------------s
 with tf.Session() as sess:
     coord = tf.train.Coordinator()
     thread = tf.train.start_queue_runners(sess=sess, coord=coord)
