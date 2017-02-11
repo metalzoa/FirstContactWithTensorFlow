@@ -47,11 +47,18 @@ out_w = tf.Variable(tf.truncated_normal([10, 1]))
 out_b = tf.Variable(tf.zeros([1]))
 # --------------------------------------------------------------
 x_image = tf.reshape(x, shape=[-1, image_width, image_height, 1])
-h1 = tf.nn.relu(tf.nn.conv2d(x_image, hidden1_w, strides=[1, 1, 1, 1], padding="SAME") + hidden1_b)
-h2 = tf.nn.relu(tf.nn.conv2d(h1, hidden2_w, strides=[1, 1, 1, 1], padding="SAME") + hidden2_b)
-h_flat = tf.reshape(h2, [-1, image_width * image_height * 64])
+h_conv1 = tf.nn.relu(tf.nn.conv2d(x_image, hidden1_w, strides=[1, 1, 1, 1], padding="SAME") + hidden1_b)
+h_pool1 = tf.nn.max_pool(h_conv1, ksize=[1,2,2,1], strides=[1,1,1,1], padding='SAME')
+
+h_conv2 = tf.nn.relu(tf.nn.conv2d(h_conv1, hidden2_w, strides=[1, 1, 1, 1], padding="SAME") + hidden2_b)
+h_pool2 = tf.nn.max_pool(h_conv2, ksize=[1,2,2,1], strides=[1,1,1,1], padding='SAME')
+
+h_flat = tf.reshape(h_pool2, [-1, image_width * image_height * 64])
 h_fc1 = tf.nn.relu(tf.matmul(h_flat, fc_w) + fc_b)
-pred = tf.matmul(h_fc1, out_w) + out_b
+
+drop_fc = tf.nn.dropout(h_fc1, 0.5)
+
+pred = tf.matmul(drop_fc, out_w) + out_b
 
 loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(pred, y_))
 train = tf.train.AdamOptimizer(1e-4).minimize(loss)
@@ -77,4 +84,4 @@ with tf.Session() as sess:
     coord.request_stop()
     coord.join(thread)
 
-#13분 35초
+#1시간 40분 20초
